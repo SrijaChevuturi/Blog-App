@@ -1,0 +1,34 @@
+.home {
+    background-image: url('https://www.wallpapertip.com/wmimgs/66-666819_website-design-background-creative-background-image-for-website.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: aliceblue;
+    min-height: 80vh;
+    padding-top: 50px; /* Adjusted top padding for better spacing */
+    padding-bottom: 50px; /* Adjusted bottom padding for better spacing */
+}
+
+.blog {
+    color: aliceblue;
+    margin-top: 20px; /* Reduced top margin */
+    margin-bottom: 20px; /* Added bottom margin */
+}
+
+.para {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 20px; /* Added top margin for better spacing */
+    margin-bottom: 20px; /* Added bottom margin for better spacing */
+}
+
+/* Additional CSS for responsiveness */
+@media (max-width: 768px) {
+    .blog {
+        font-size: 2rem; /* Decrease font size on smaller screens */
+    }
+
+    .para {
+        font-size: 1.5rem; /* Decrease font size on smaller screens */
+    }
+}

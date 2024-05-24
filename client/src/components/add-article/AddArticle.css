@@ -1,0 +1,42 @@
+.form-container {
+    background-color: #cde3f9; /* Example background color */
+    padding: 20px;
+    border:2px solid black;
+    border-radius: 15px;
+  }
+
+  
+.card {
+    border-radius: 15px;
+  }
+  
+  .card-header h2 {
+    margin-bottom: 0;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .text-end {
+    margin-top: 20px;
+  }
+  
+  .form-label {
+    font-weight: bold;
+  }
+  
+  .text-danger {
+    font-size: 14px;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  

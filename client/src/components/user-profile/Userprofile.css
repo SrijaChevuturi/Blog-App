@@ -1,0 +1,11 @@
+.article{
+    border-radius: 20px;
+    width: 120px;
+    margin: auto;
+    height: 42px;
+    margin-bottom: 20px;
+}
+
+.article:hover{
+    font-weight: bold;
+}

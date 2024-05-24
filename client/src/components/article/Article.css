@@ -1,0 +1,14 @@
+.article-box {
+    border: 3px solid #070000;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 950px;
+  }
+
+  .content-box {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }

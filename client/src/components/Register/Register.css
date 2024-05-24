@@ -1,0 +1,43 @@
+.class1 {
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/018/832/672/small_2x/light-blue-background-with-sky-pattern-for-use-as-a4-document-cover-or-report-cover-photo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .register {
+    background-color: rgba(162, 215, 246, 0.251);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    max-width: 500px; /* Limit width for smaller screens */
+    margin: 0 auto; /* Center horizontally */
+    padding: 20px; /* Add padding for better spacing */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  .form-label {
+    display: none; /* Hide labels on small screens */
+  }
+  
+  .form-control {
+    width: 100%; /* Full width for input fields */
+    margin-bottom: 10px; /* Add margin bottom for spacing */
+  }
+  
+  .btn {
+    width: 40%; /* Full width for button */
+  }
+  
+  .lead {
+    color: dark;
+    text-align: center; /* Center text */
+  }
+  
+  @media (min-width: 768px) {
+    .register {
+      max-width: 700px; /* Increase max-width for larger screens */
+    }
+  }
+  

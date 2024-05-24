@@ -1,0 +1,166 @@
+###User api reqs
+
+//user registration
+//create user
+POST http://localhost:5000/user-api/user
+Content-Type: application/json
+
+{
+    "userType": "user",
+    "username": "ravi",
+    "password": "ravi",
+    "email": "ravi@gmail.com"
+}
+
+
+//user login
+###
+POST http://localhost:5000/user-api/login
+Content-Type: application/json
+
+{
+    "userType": "user",
+    "username": "ravi",
+    "password": "ravi"
+}
+
+//reading articles of all users
+###
+get http://localhost:5000/user-api/articles
+
+
+
+//write comment
+###
+post http://localhost:5000/user-api/comment/1708959421
+Content-Type: application/json
+
+{
+    "username":"ravi",
+    "comment":"Amzing content"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+###
+//author registration
+###author creation
+POST http://localhost:5000/author-api/author
+Content-Type: application/json
+
+{
+    "userType":"author",
+    "username":"shekar",
+    "password":"shekar",
+    "email":"shekar@gmail.com"
+}
+
+
+//author login
+###
+POST http://localhost:5000/author-api/login
+Content-Type: application/json
+
+{
+    "userType": "author",
+    "username": "shekar",
+    "password": "shekar"
+}
+
+
+
+
+### add new article by author
+POST http://localhost:5000/author-api/article
+Content-Type: application/json
+
+{
+    "articleId":"{{$timestamp}}",
+    "title":"Fundamentals of JavaScript",
+    "cateogry":"Programming",
+    "content":"JavaScript, often abbreviated as JS, is a programming language and core technology of the World Wide Web, alongside HTML and CSS. As of 2024, 98.9% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries.",
+    "dateOfCreation":"{{$datetime iso8601}}",
+    "dateOfModification":"{{$datetime iso8601}}",
+    "username":"kiran",
+    "comments":[ ],
+    "status":true
+
+}
+
+
+### update article by author
+PUT http://localhost:5000/author-api/article
+Content-Type: application/json
+
+{
+    "articleId":"1708959421",
+    "title":"Fundamentals of JavaScript",
+    "cateogry":"Programming",
+    "content":"often abbreviated as JS, is a programming language and core technology of the World Wide Web, alongside HTML and CSS. As of 2024, 98.9% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries.",
+    "dateOfCreation":"2024-02-26T14:57:01.968Z",
+    "dateOfModification":"{{$datetime iso8601}}",
+    "username":"kiran",
+    "comments":[ ],
+    "status":true
+
+}
+
+
+### soft delete an article by article ID
+PUT http://localhost:5000/author-api/article/1708959421
+Content-Type: application/json
+
+{
+    "articleId":"1708959421",
+    "title":"Fundamentals of JavaScript",
+    "cateogry":"Programming",
+    "content":"often abbreviated as JS, is a programming language and core technology of the World Wide Web, alongside HTML and CSS. As of 2024, 98.9% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries.",
+    "dateOfCreation":"2024-02-26T14:57:01.968Z",
+    "dateOfModification":"{{$datetime iso8601}}",
+    "username":"kiran",
+    "comments":[ ],
+    "status":true
+}
+
+
+
+
+###reading all articles of an author
+GET http://localhost:5000/author-api/articles/kiran
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# ###
+# GET http://localhost:4000/author-api/test-author
+
+
+# ###
+# GET http://localhost:4000/admin-api/test-admin
